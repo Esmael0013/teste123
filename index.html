@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Financeira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#despesas">Despesas</a></li>
+            <li><a href="#receitas">Receitas</a></li>
+            <li><a href="#balanco">Balanço</a></li>
+        </ul>
+    </nav>
+    <div class="container" id="despesas">
+        <h1>Calculadora de Despesas</h1>
+        <form id="expense-form">
+            <label for="expense-name">Nome da Despesa:</label>
+            <input type="text" id="expense-name" required>
+            <label for="expense-amount">Valor da Despesa:</label>
+            <input type="number" id="expense-amount" required>
+            <button type="submit">Adicionar Despesa</button>
+        </form>
+        <table id="expense-table">
+            <thead>
+                <tr>
+                    <th>Nome da Despesa</th>
+                    <th>Valor da Despesa</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <h2>Total de Despesas: <span id="total-expense-amount">R$0,00</span></h2>
+    </div>
+    <div class="container" id="receitas">
+        <h1>Calculadora de Receitas</h1>
+        <form id="income-form">
+            <label for="income-name">Nome da Receita:</label>
+            <input type="text" id="income-name" required>
+            <label for="income-amount">Valor da Receita:</label>
+            <input type="number" id="income-amount" required>
+            <button type="submit">Adicionar Receita</button>
+        </form>
+        <table id="income-table">
+            <thead>
+                <tr>
+                    <th>Nome da Receita</th>
+                    <th>Valor da Receita</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <h2>Total de Receitas: <span id="total-income-amount">R$0,00</span></h2>
+    </div>
+    <div class="container" id="balanco">
+        <h1>Balanço Total</h1>
+        <h2>Balanço: <span id="total-balance">R$0,00</span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

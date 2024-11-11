@@ -1,0 +1,118 @@
+/* style.css */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --background-color: #f2f2f2;
+    --text-color: #333;
+    --white-color: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    width: 100%;
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--text-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 10px 0;
+    }
+}
